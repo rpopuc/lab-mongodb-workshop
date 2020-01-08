@@ -43,7 +43,7 @@
                         alt="Avatar of Ravan Scafi">
                     <div class="text-sm">
                         <p class="text-gray-900 leading-none">{{ $comment->author->name }}</p>
-                        <p class="text-gray-600">{{ $comment->created_at}}</p>
+                        <p class="text-gray-600">{{ \Mongolid\Util\LocalDateTime::format( $comment->created_at, 'd/m/Y') }}</p>
                     </div>
                 </div>
                 <p>
