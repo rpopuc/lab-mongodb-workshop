@@ -15,7 +15,7 @@
                  alt="Avatar of {{ $post->author ? $post->author->name : '' }}">
             <div>
                 <p class="text-gray-900 leading-none">{{ $post->author ? $post->author->name : 'Anonimo' }}</p>
-                <p class="text-gray-600">{{ $post->created_at }}</p>
+                <p class="text-gray-600">{{ \Mongolid\Util\LocalDateTime::format($post->created_at, 'd/m/Y') }}</p>
             </div>
         </div>
         <div class="px-6 py-4 mb-4 text-center">
@@ -43,7 +43,7 @@
                         alt="Avatar of Ravan Scafi">
                     <div class="text-sm">
                         <p class="text-gray-900 leading-none">{{ $comment->author->name }}</p>
-                        <p class="text-gray-600">{{ \Mongolid\Util\LocalDateTime::format( $comment->created_at, 'd/m/Y') }}</p>
+                        <p class="text-gray-600">{{ \Mongolid\Util\LocalDateTime::format($comment->created_at, 'd/m/Y') }}</p>
                     </div>
                 </div>
                 <p>
