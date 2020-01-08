@@ -16,5 +16,5 @@ Route::get('/', function () {
 });
 
 Route::get('/post/{id}', function (string $id) {
-    return view('posts.show');
+    return view('posts.show', compact(['id']));
 })->name('post.show');
