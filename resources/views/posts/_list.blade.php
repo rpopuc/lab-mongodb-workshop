@@ -17,7 +17,7 @@
                             <p class="text-gray-900 leading-none">
                                 {{ $post->author ? $post->author->name : 'Anonimo' }}
                             </p>
-                            <p class="text-gray-600">Sep 04</p>
+                            <p class="text-gray-600">{{ $post->created_at }}</p>
                         </div>
                     </div>
                     <p class="text-gray-700 text-base">
