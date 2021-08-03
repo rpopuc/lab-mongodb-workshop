@@ -12,5 +12,6 @@ class Author extends AbstractModel
         'name' => 'required|string|max:100',
         'avatar' => 'required|string',
     ];
+
 }
 
